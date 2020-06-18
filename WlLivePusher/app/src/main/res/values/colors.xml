@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="bg_blue">#501BA1E2</color>
+    <color name="toolbox_bg">#50aaaaaa</color>
+    <color name="android_dkgray">#80444444</color>
+
+    <color name="pressed_blue">#00afef</color><!--蓝-->
+    <color name="unpress_white">#eaeaea</color><!--灰白-->
+</resources>

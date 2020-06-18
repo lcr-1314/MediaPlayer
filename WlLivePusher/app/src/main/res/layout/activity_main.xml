@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.wllivepusher.camera.WlCameraView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:onClick="videorecord"
+            android:background="@drawable/btn_left_round_rect"
+            android:text="视频编码录制" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:onClick="livepush"
+            android:background="@drawable/btn_midd_round_rect"
+            android:text="直播推流" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:onClick="more"
+            android:background="@drawable/btn_right_round_rect"
+            android:text="更多设置" />
+    </LinearLayout>
+</RelativeLayout>
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="imgvideo"-->
+<!--            android:text="图片生成视频" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="yuvplayer"-->
+<!--            android:text="播放YUV数据" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="startRecord"-->
+<!--            android:text="开始录制音频" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="stopRecord"-->
+<!--            android:text="停止录制音频" />-->

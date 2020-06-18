@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 边框 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/bg_blue" />
+
+    <!-- 形状颜色（如果需要的是空心矩形, 则形状颜色设置为透明） -->
+    <solid android:color="@color/android_dkgray" />
+
+    <size android:width="58dp"
+        android:height="58dp" />
+
+    <corners android:radius="6dp"/>
+</shape>
