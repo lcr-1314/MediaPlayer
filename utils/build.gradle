@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation var.SupportAppcompatV7
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation var.SupportTestRunner
+    androidTestImplementation var.SupportTestEspresso
+    api 'com.google.zxing:core:3.3.2'
+    //glide图片加载
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    // glide 一些通用转换器
+    api 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    api 'com.guo.android_extend:android-extend:1.0.1'
+    implementation project(':libyuv')
+}
